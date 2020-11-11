@@ -287,7 +287,7 @@ header li {
 }
 
 .m-06-links-title {
-  padding: 24px 24px 24px 48px;
+  padding: 48px 24px 24px 48px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -326,7 +326,7 @@ header li {
 }
 
 .m-06b-links-title {
-  padding: 24px 24px 24px 0px;
+  padding: 48px 0px 24px 0px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -362,12 +362,13 @@ header li {
   row-gap: 24px;
 }
 
-.m-06b i {
+.m-06b-links-pic i {
   font-size: 30px;
+  margin-bottom: 24px;
 }
 
-.m-06b h5,
-.m-06b i {
+.m-06b-links-pic h5,
+.m-06b-links-pic i {
   color: #006dbf;
   margin-bottom: 20px;
 }
@@ -392,7 +393,7 @@ header li {
 
 .m-08a-hero-content {
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 48px;
   width: 50%;
 }
@@ -409,13 +410,19 @@ header li {
 }
 
 .m-10-links-title {
-  padding: 48px 0px 48px 48px;
-  display: inline-flex;
+  padding: 48px 0px 0px 48px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .m-10-links-title button {
-  background-color: rgba(0, 0, 0, 0);
+  position: relative;
   box-shadow: none;
+  width: 13rem;
+  justify-content: center;
+  background-color: #f4f2fa;
+  margin-right: 24px;
 }
 
 .m-10-links {
@@ -423,12 +430,14 @@ header li {
   padding: 0px 48px;
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 24px;
 }
 
 .m-10-links button {
-  margin: 1rem;
   width: 100%;
   text-align: left;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 /* ========== FOOTER ========== */

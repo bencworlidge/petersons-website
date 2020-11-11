@@ -302,7 +302,7 @@ header li {
 }
 
 .m-06-links-title {
-  padding: 24px 24px 24px 48px;
+  padding: 48px 24px 24px 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,7 @@ header li {
 }
 
 .m-06b-links-title {
-  padding: 24px 24px 24px 0px;
+  padding: 48px 0px 24px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,12 +398,13 @@ header li {
   row-gap: 24px;
 }
 
-.m-06b i {
+.m-06b-links-pic i {
   font-size: 30px;
+  margin-bottom: 24px;
 }
 
-.m-06b h5,
-.m-06b i {
+.m-06b-links-pic h5,
+.m-06b-links-pic i {
   color: #006dbf;
   margin-bottom: 20px;
 }
@@ -427,7 +428,7 @@ header li {
 
 .m-08a-hero-content {
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 48px;
   width: 50%;
 }
@@ -445,16 +446,26 @@ header li {
 }
 
 .m-10-links-title {
-  padding: 48px 0px 48px 48px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  padding: 48px 0px 0px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
 }
 
 .m-10-links-title button {
-  background-color: rgba(0, 0, 0, 0);
+  position: relative;
   -webkit-box-shadow: none;
           box-shadow: none;
+  width: 13rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4f2fa;
+  margin-right: 24px;
 }
 
 .m-10-links {
@@ -464,12 +475,14 @@ header li {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  padding-bottom: 24px;
 }
 
 .m-10-links button {
-  margin: 1rem;
   width: 100%;
   text-align: left;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 /* ========== FOOTER ========== */
