@@ -28,7 +28,8 @@
             <img class="img-fluid" src="./resources/juliane-liebermann-O-RKu3Aqnsw-unsplash.png" alt="family in field">
             <div class="card-img-overlay col-sm-6 p-5">
                 <i style="color: #ccd500; font-size: xx-large;" class="fas fa-user-circle card-title d-none d-md-block"></i>
-                <h1 class="card-title text-white">Members</h1>
+                <h1 class="card-title text-white d-none d-md-block">Members</h1>
+                <h2 class="card-title text-white d-block d-md-none">Members</h2>
                 <p class="card-text text-white d-none d-md-block">We want to help our members in any way we can. From your new members area, you can access all the information you require.</p>
             </div>
         </div>
@@ -56,10 +57,11 @@
         </div>
     </section>
 
-    <section class="container border border-dark rounded-lg mt-5 p-5">
+    <section class="container border border-dark rounded-lg mt-5 p-5 d-none d-md-block">
         <div class="row ">
             <h3 class="col-10">Your profile</h3>
-            <button class="btn-visit col-2"><h6>Visit this section </h6><i class="fas fa-long-arrow-alt-right "></i></button>
+            <button class="btn-visit col-2 d-none d-md-block"><h6>More...</h6><i class="fas fa-long-arrow-alt-right "></i></button>
+            <button class="btn-visit col-2 d-block d-md-none"><i class="fas fa-arrow-circle-right"></i></button> 
         </div>
         <div class="row mt-5">
             <div class="col-4">
@@ -97,7 +99,54 @@
         </div>
     </section>
 
-    <section class="container mt-5">
+    <!--========== SMALL VERSION ==========-->
+
+    <section class="container border border-dark rounded-lg mt-5 p-5 d-block d-md-none">
+        <div class="row ">
+            <h3 class="col-10">Your profile</h3>
+            <button class="btn-visit col-2 d-none d-md-block"><h6>More...</h6><i class="fas fa-long-arrow-alt-right "></i></button>
+            <button class="btn-visit col-2 d-block d-md-none"><i class="fas fa-arrow-circle-right"></i></button> 
+        </div>
+        <div class="row mt-5">
+            <div class="col-6">
+                <i class="far fa-grin-alt mb-3"></i> <br>
+                <h5>Enjoying your time with us?</h5>
+                <p class="d-none d-md-block">If you're enjoying your time with Petersons, you can refer a friend and receive a discount for up to a year. Apply now and save more.</p>
+            </div>
+            <div class="col-6">
+                <i class="fas fa-bed mb-3"></i> <br>
+                <h5>Peace of mind</h5>
+                <p class="d-none d-md-block">Take a look at your policies so you can relax, knowing that we've got everything covered.</p>
+            </div>
+        </div>    
+        <div class="row mt-3">
+            <div class="col-6">
+                <i class="fas fa-tasks mb-3"></i> <br>
+                <h5>Review any outstanding quotations</h5>
+                <p class="d-none d-md-block">Applied for further policies but haven't heard back yet? You can check on the progress on each application here.</p>
+            </div>
+            <div class="col-6">
+                <i class="far fa-heart mb-3"></i> <br>
+                <h5>Life insurance</h5>
+                <p class="d-none d-md-block">Get special quotes on our new life insurance policies</p>
+            </div>
+        </div>    
+        <div class="row mt-3">
+            <div class="col-6">
+                <i class="far fa-question-circle mb-3"></i> <br>
+                <h5>Any questions?</h5>
+                <p class="d-none d-md-block">If you have any questions, our fantastic team are here to help!</p>
+            </div>
+            <div class="col-6">
+                <i class="fas fa-envelope mb-3"></i> <br>
+                <h5>Contact us</h5>
+                <p class="d-none d-md-block">Too busy to call? Not a problem, send us an email and we'll be in touch.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-5 d-none d-md-block">
         <div class="row">
             <div class="col-4" style="display:block; margin: auto;">
                 <img class="img-fluid rounded-lg" src="./resources/austin-distel-jpHw8ndwJ_Q-unsplash.png" alt="co-workers">
@@ -105,7 +154,7 @@
             <div class="col-8 border border-dark rounded-lg p-5">
                 <div class="row">
                     <h3 class="col-8">Why you can rely on us</h3>
-                    <button class="btn-visit col-4"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button class="btn-visit col-4"><h6>More...</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
                 </div>
                 <div class="m-06b-links-pic mt-3">
                     <div class="row mt-5">
@@ -137,16 +186,102 @@
         </div>
     </section>
 
-    <section class="container mt-5">
+    <!-- ========== SMALL VERSION ========== -->
+
+    <section class="container mt-5 d-block d-md-none">
+        <div class="row">
+            <div class="col-12" style="display:block; margin: auto;">
+                <img class="img-fluid rounded-lg" src="./resources/austin-distel-jpHw8ndwJ_Q-unsplash.png" alt="co-workers">
+            </div>
+            <div class="row">
+                <div class="col-12 border border-dark rounded-lg p-5 mt-5">
+                    <div class="row">
+                        <h3 class="col-8">Why you can rely on us</h3>
+                        <button class="btn-visit col-4"><i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
+                    <div class="m-06b-links-pic mt-3">
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <i class="fas fa-pen mb-3"></i> <br>
+                                <h5>We love what we do</h5>
+                                <p class="d-none d-md-block">We've been one of the most reliable insurance broker's for over three decades now and we employ individuals who are as passionate as we are.</p>
+                            </div>
+                            <div class="col-6">
+                                <i class="far fa-building mb-3"></i> <br>
+                                <h5>Offices around the world</h5>
+                                <p class="d-none d-md-block">We can now be found in more than ten cities in over four countries around the world. We bring the best services to all.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <i class="fas fa-laptop-house mb-3"></i> <br>
+                                <h5>Experts in everything</h5>
+                                <p class="d-none d-md-block">We cover a huge variety of different insurance policies, from home insurance to electrical.</p>
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-phone-square-alt mb-3"></i> <br>
+                                <h5>Just a phone call away</h5>
+                                <p class="d-none d-md-block">Our 24/7 call centre team are always here to answer any questions or talk you through any queries you may have.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 d-none d-md-block">
         <div class="row">
             <div class="col-4" style="display:block; margin: auto;">
                 <img class="img-fluid rounded-lg" src="./resources/natalya-zaritskaya-SIOdjcYotms-unsplash.png" alt="family at beach">
             </div>
-        
             <div class="col-8 border border-dark rounded-lg p-5">
                 <div class="row">
                     <h3 class="col-9">Additional policies</h3>
-                    <button class="btn-visit col-3"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button class="btn-visit col-3"><h6>More...</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+                <div class="m-06b-links-pic mt-3">
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <i class="fas fa-notes-medical mb-3"></i> <br>
+                            <h5>Family health insurance</h5>
+                            <p class="d-none d-md-block">Health insurance is an insurance policy designed to cover the cost of private medical treatment. It will generally cover you for ‘acute conditions’, such as a hip replacement or having a hernia removed. </p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-home mb-3"></i> <br>
+                            <h5>Home insurance</h5>
+                            <p class="d-none d-md-block">Home insurance (or house insurance) is a type of insurance designed to financially protect your home and belongings.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <i class="fas fa-car mb-3"></i> <br>
+                            <h5>Car insurance</h5>
+                            <p class="d-none d-md-block">Car insurance can cover you for things like if your car is broken into or stolen, or if you’re involved in a collision.</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-heartbeat mb-3"></i> <br>
+                            <h5>Life insurance</h5>
+                            <p class="d-none d-md-block">Life insurance is a type of insurance policy that can provide financial support to your loved ones when you pass away.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---========== SMALL VERSION ==========-->
+
+    <section class="container mt-5 d-block d-md-none">
+        <div class="row">
+            <div class="col-12" style="display:block; margin: auto;">
+                <img class="img-fluid rounded-lg" src="./resources/natalya-zaritskaya-SIOdjcYotms-unsplash.png" alt="family at beach">
+            </div>
+        </div>
+            <div class="col-12 border border-dark rounded-lg p-5 mt-5">
+                <div class="row">
+                    <h3 class="col-9">Additional policies</h3>
+                    <button class="btn-visit col-3"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
                 <div class="m-06b-links-pic mt-3">
                     <div class="row mt-5">
@@ -181,7 +316,7 @@
     <section class="container mt-5 d-none d-sm-block">
         <div class="card">
             <img class="img-fluid" src="./resources/desk.png" alt="writing at desk">
-            <div class="card-img-overlay col-6 p-5">
+            <div class="card-img-overlay col-6 pl-5">
                 <h3 class="card-title text-white">Get a free quote from us now!</h3>
                 <p class="card-text text-white d-none d-md-block" >If you're thinking about taking out another policy with us, why not apply for a quotation now? It's quick, easy and as you're already a member, you get priority.</p>
                 <button class="btn-sec">Learn more</button>
@@ -192,7 +327,8 @@
     <section class="container mt-5 bg-secondary rounded-lg p-5 mb-3">
             <div class="row">
                 <h3 class="col-9">FAQ's</h3>
-                <button class="btn-visit col-3"><h6>View all FAQs</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                <button class="btn-visit col-3 d-none d-md-block"><h6>View all FAQs</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                <button class="btn-visit col-3 d-block d-md-none"><i class="fas fa-arrow-circle-right"></i></button>
             </div>
             <div class="row mt-3">
                 <ul class="list-group col-12">
