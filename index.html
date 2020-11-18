@@ -4,244 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/06c31878b8.js" crossorigin="anonymous"></script>
     <title>Petersons</title>
+    <link rel="shortcut icon" type="image/jpg" href="./resources/favicon.ico"/>
 </head>
 <body>
-    <header>
-        <img src="./resources/logo.png" alt="logo">
-        <ul>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Advice</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">For Investors</a></li>
-            <div class="login"><button class="btn-pri">Log In</button></div>
+    <div class="navbar container">
+        <img class="navbar-brand" height="100px" src="./resources/logo.png" alt="logo">
+        <ul class="nav justify-content-end ">
+            <li class="nav-item d-none d-md-block"><a class="nav-link" href="#">Members</a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link" href="#">Advice</a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link" href="#">For Investors</a></li>
+            <div class="login d-none d-md-block"><button class="btn-pri">Log In</button></div>
         </ul>
-    </header>
-    <hr>
-    <section class="m-04">
-        <div class="m-04-hero">
-            <img src="./resources/juliane-liebermann-O-RKu3Aqnsw-unsplash.png" alt="family in field">
-            <div class="m-04-content">
-                <i class="fas fa-user-circle"></i>
-                <h1>Members</h1>
-                <p>We want to help our members in any way we can. From your new members area, you can access all the information you require.</p>
+    </div>
+    
+
+    <section class="m-04 container">
+        <div class="card">
+            <img class="img-fluid" src="./resources/juliane-liebermann-O-RKu3Aqnsw-unsplash.png" alt="family in field">
+            <div class="card-img-overlay col-sm-6 p-5">
+                <i style="color: #ccd500; font-size: xx-large;" class="fas fa-user-circle card-title d-none d-md-block"></i>
+                <h1 class="card-title text-white">Members</h1>
+                <p class="card-text text-white d-none d-md-block">We want to help our members in any way we can. From your new members area, you can access all the information you require.</p>
             </div>
         </div>
-
     <hr>
     </section>
-    <section class="m-05">
-        <div class="m-05-links-title">
-            <h3>Popular content</h3>
-        </div>
-        <div class="m-05-links">
-            <button class="btn-tert"><h5>Setting up your online members account </h5><i class="fas fa-long-arrow-alt-right"></i></button>
-            <button class="btn-tert"><h5>Frequently asked questions </h5><i class="fas fa-long-arrow-alt-right"></i></button>
-            <button class="btn-tert"><h5>Deleting your account </h5><i class="fas fa-long-arrow-alt-right"></i></button>
+
+    <section class="container d-none d-md-block">
+        <div class="row bg-secondary rounded-lg p-4 pr-5 mt-5">
+            <div class="col-12">            
+                <div class="row">
+                    <h3 class="col-12 mb-3">Popular content</h3>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button class="btn-tert"><h6>Setting up your account</h6></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn-tert"><h6>FAQs </h6></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn-tert"><h6>Deleting your account </h6></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="m-06">
-        <div class="m-06-links-title">
-            <h3>Your profile</h3>
-            <button class="btn-tert"><h6>Visit this section </h6><i class="fas fa-long-arrow-alt-right"></i></button>
+
+    <section class="container border border-dark rounded-lg mt-5 p-5">
+        <div class="row ">
+            <h3 class="col-10">Your profile</h3>
+            <button class="btn-visit col-2"><h6>Visit this section </h6><i class="fas fa-long-arrow-alt-right "></i></button>
         </div>
-        <div class="m-06-links-pic">
-            <div class="link">
-                <i class="far fa-grin-alt"></i> <br>
+        <div class="row mt-5">
+            <div class="col-4">
+                <i class="far fa-grin-alt mb-3"></i> <br>
                 <h5>Enjoying your time with us?</h5>
-                <p>If you're enjoying your time with Petersons, you can refer a friend and receive a discount for up to a year. Apply now and save more.</p>
+                <p class="d-none d-md-block">If you're enjoying your time with Petersons, you can refer a friend and receive a discount for up to a year. Apply now and save more.</p>
             </div>
-            <div class="link">
-                <i class="fas fa-bed"></i> <br>
+            <div class="col-4">
+                <i class="fas fa-bed mb-3"></i> <br>
                 <h5>Peace of mind</h5>
-                <p>Take a look at your policies so you can relax, knowing that we've got everything covered.</p>
+                <p class="d-none d-md-block">Take a look at your policies so you can relax, knowing that we've got everything covered.</p>
             </div>
-            <div class="link">
-                <i class="fas fa-tasks"></i> <br>
+            <div class="col-4">
+                <i class="fas fa-tasks mb-3"></i> <br>
                 <h5>Review any outstanding quotations</h5>
-                <p>Applied for further policies but haven't heard back yet? You can check on the progress on each application here.</p>
+                <p class="d-none d-md-block">Applied for further policies but haven't heard back yet? You can check on the progress on each application here.</p>
             </div>
-            <div class="link">
-                <i class="far fa-heart"></i> <br>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4">
+                <i class="far fa-heart mb-3"></i> <br>
                 <h5>Life insurance</h5>
-                <p>Get special quotes on our new life insurance policies</p>
+                <p class="d-none d-md-block">Get special quotes on our new life insurance policies</p>
             </div>
-            <div class="link">
-                <i class="far fa-question-circle"></i> <br>
+            <div class="col-4">
+                <i class="far fa-question-circle mb-3"></i> <br>
                 <h5>Any questions?</h5>
-                <p>If you have any questions, our fantastic team are here to help!</p>
+                <p class="d-none d-md-block">If you have any questions, our fantastic team are here to help!</p>
             </div>
-            <div class="link">
-                <i class="fas fa-envelope"></i> <br>
+            <div class="col-4">
+                <i class="fas fa-envelope mb-3"></i> <br>
                 <h5>Contact us</h5>
-                <p>Too busy to call? Not a problem, send us an email and we'll be in touch.</p>
+                <p class="d-none d-md-block">Too busy to call? Not a problem, send us an email and we'll be in touch.</p>
             </div>
         </div>
     </section>
-    <section class="m-06b">
-        <div class="m-06b-image">
-            <img src="./resources/austin-distel-jpHw8ndwJ_Q-unsplash.png" alt="co-workers">
-        </div>
-        <div class="m-06b-box">
-            <div class="m-06b-links-title">
-                <h3>Why you can rely on us</h3>
-                <button class="btn-tert"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-4" style="display:block; margin: auto;">
+                <img class="img-fluid rounded-lg" src="./resources/austin-distel-jpHw8ndwJ_Q-unsplash.png" alt="co-workers">
             </div>
-            <div class="m-06b-links-pic">
-                <div class="link">
-                    <i class="fas fa-pen"></i> <br>
-                    <h5>We love what we do</h5>
-                    <p>We've been one of the most reliable insurance broker's for over three decades now and we employ individuals who are as passionate as we are.</p>
+            <div class="col-8 border border-dark rounded-lg p-5">
+                <div class="row">
+                    <h3 class="col-8">Why you can rely on us</h3>
+                    <button class="btn-visit col-4"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
                 </div>
-                <div class="link">
-                    <i class="far fa-building"></i> <br>
-                    <h5>Offices around the world</h5>
-                    <p>We can now be found in more than ten cities in over four countries around the world. We bring the best services to all.</p>
-                </div>
-                <div class="link">
-                    <i class="fas fa-laptop-house"></i> <br>
-                    <h5>Experts in everything</h5>
-                    <p>We cover a huge variety of different insurance policies, from home insurance to electrical.</p>
-                </div>
-                <div class="link">
-                    <i class="fas fa-phone-square-alt"></i> <br>
-                    <h5>Just a phone call away</h5>
-                    <p>Our 24/7 call centre team are always here to answer any questions or talk you through any queries you may have.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="m-06b">
-        <div class="m-06b-image">
-            <img src="./resources/natalya-zaritskaya-SIOdjcYotms-unsplash.png" alt="family at beach">
-        </div>
-        <div class="m-06b-box">
-            <div class="m-06b-links-title">
-                <h3>Additional policies</h3>
-                <button class="btn-tert"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
-            </div>
-            <div class="m-06b-links-pic">
-                <div class="link">
-                    <i class="fas fa-notes-medical"></i> <br>
-                    <h5>Family health insurance</h5>
-                    <p>Health insurance is an insurance policy designed to cover the cost of private medical treatment. It will generally cover you for ‘acute conditions’, such as a hip replacement or having a hernia removed. </p>
-                </div>
-                <div class="link">
-                    <i class="fas fa-home"></i> <br>
-                    <h5>Home insurance</h5>
-                    <p>Home insurance (or house insurance) is a type of insurance designed to financially protect your home and belongings.</p>
-                </div>
-                <div class="link">
-                    <i class="fas fa-car"></i> <br>
-                    <h5>Car insurance</h5>
-                    <p>Car insurance can cover you for things like if your car is broken into or stolen, or if you’re involved in a collision.</p>
-                </div>
-                <div class="link">
-                    <i class="fas fa-heartbeat"></i> <br>
-                    <h5>Life insurance</h5>
-                    <p>Life insurance is a type of insurance policy that can provide financial support to your loved ones when you pass away.</p>
+                <div class="m-06b-links-pic mt-3">
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <i class="fas fa-pen mb-3"></i> <br>
+                            <h5>We love what we do</h5>
+                            <p class="d-none d-md-block">We've been one of the most reliable insurance broker's for over three decades now and we employ individuals who are as passionate as we are.</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="far fa-building mb-3"></i> <br>
+                            <h5>Offices around the world</h5>
+                            <p class="d-none d-md-block">We can now be found in more than ten cities in over four countries around the world. We bring the best services to all.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <i class="fas fa-laptop-house mb-3"></i> <br>
+                            <h5>Experts in everything</h5>
+                            <p class="d-none d-md-block">We cover a huge variety of different insurance policies, from home insurance to electrical.</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-phone-square-alt mb-3"></i> <br>
+                            <h5>Just a phone call away</h5>
+                            <p class="d-none d-md-block">Our 24/7 call centre team are always here to answer any questions or talk you through any queries you may have.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="m-08a">
-        <div class="m-08a-hero">
-            <img src="./resources/desk.png" alt="writing at desk">
-            <div class="m-08a-hero-content">
-                <h3>Get a free quote from us now!</h3>
-                <p>If you're thinking about taking out another policy with us, why not apply for a quotation now? It's quick, easy and as you're already a member, you get priority.</p>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-4" style="display:block; margin: auto;">
+                <img class="img-fluid rounded-lg" src="./resources/natalya-zaritskaya-SIOdjcYotms-unsplash.png" alt="family at beach">
+            </div>
+        
+            <div class="col-8 border border-dark rounded-lg p-5">
+                <div class="row">
+                    <h3 class="col-9">Additional policies</h3>
+                    <button class="btn-visit col-3"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+                <div class="m-06b-links-pic mt-3">
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <i class="fas fa-notes-medical mb-3"></i> <br>
+                            <h5>Family health insurance</h5>
+                            <p class="d-none d-md-block">Health insurance is an insurance policy designed to cover the cost of private medical treatment. It will generally cover you for ‘acute conditions’, such as a hip replacement or having a hernia removed. </p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-home mb-3"></i> <br>
+                            <h5>Home insurance</h5>
+                            <p class="d-none d-md-block">Home insurance (or house insurance) is a type of insurance designed to financially protect your home and belongings.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <i class="fas fa-car mb-3"></i> <br>
+                            <h5>Car insurance</h5>
+                            <p class="d-none d-md-block">Car insurance can cover you for things like if your car is broken into or stolen, or if you’re involved in a collision.</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-heartbeat mb-3"></i> <br>
+                            <h5>Life insurance</h5>
+                            <p class="d-none d-md-block">Life insurance is a type of insurance policy that can provide financial support to your loved ones when you pass away.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 d-none d-sm-block">
+        <div class="card">
+            <img class="img-fluid" src="./resources/desk.png" alt="writing at desk">
+            <div class="card-img-overlay col-6 p-5">
+                <h3 class="card-title text-white">Get a free quote from us now!</h3>
+                <p class="card-text text-white d-none d-md-block" >If you're thinking about taking out another policy with us, why not apply for a quotation now? It's quick, easy and as you're already a member, you get priority.</p>
                 <button class="btn-sec">Learn more</button>
             </div>
         </div>
     </section>
     
-    <section class="m-10">
-        <div class="m-10-links-title">
-            <h3>FAQ's</h3>
-            <button class="btn-tert"><h6>Visit this section</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
-        </div>
-        <div class="m-10-links">
-            <button class="btn-tert"><h5>How do I print out my policy details?</h5> </button>
-            <button class="btn-tert"><h5>How long is my quote valid for?</h5> </button>
-            <button class="btn-tert"><h5>Can I buy one day car insurance?</h5> </button>
-            <button class="btn-tert"><h5>How do job titles affect insurance?</h5> </button>
-            <button class="btn-tert"><h5>What is compreensive insurance?</h5> </button>
-        </div>
+    <section class="container mt-5 bg-secondary rounded-lg p-5 mb-3">
+            <div class="row">
+                <h3 class="col-9">FAQ's</h3>
+                <button class="btn-visit col-3"><h6>View all FAQs</h6> <i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+            <div class="row mt-3">
+                <ul class="list-group col-12">
+                    <button class="btn-tert m-3"><h5>How do I print out my policy details?</h5> </button>
+                    <button class="btn-tert m-3"><h5>How long is my quote valid for?</h5> </button>
+                    <button class="btn-tert m-3"><h5>Can I buy one day car insurance?</h5> </button>
+                    <button class="btn-tert m-3"><h5>How do job titles affect insurance?</h5> </button>
+                    <button class="btn-tert m-3"><h5>What is comprehensive insurance?</h5> </button>
+                </ul>
+            </div>
     </section>
 
     <hr>
 
-    <footer>
-        <div class="browse">
-            <h6>Browse</h6>
-            <ul>
-                <li>Employers</li>
-                <li>Members</li>
-                <li>Payroll</li>
-                <li>Investments</li>
-            </ul>
+    <section class="p-3 bg-info">
+        <div class="container contact d-none d-md-block">
+            <div class="row ">
+                <div class="browse col-2">
+                    <h6 class="mb-2">Browse</h6>
+                    <li class="mb-1"><a href="#">Employers</a> </li>
+                    <li class="mb-1"><a href="#">Members</a> </li>
+                    <li class="mb-1"><a href="#">Payroll</a> </li>
+                    <li class="mb-1"><a href="#">Investments</a> </li>                 
+                </div>
+                <div class="support col-2">
+                    <h6 class="mb-2">Support</h6>
+                    <li class="mb-1"><a href="#">Resources</a></li>
+                    <li class="mb-1"><a href="#">Help and support</a></li>
+                    <li class="mb-1"><a href="#">Contact us</a></li>
+                </div>
+                <div class="read col-2">
+                    <h6 class="mb-2">Read</h6>
+                    <li class="mb-1"><a href="#">News</a></li>
+                    <li class="mb-1"><a href="#">Press</a></li>
+                    <li class="mb-1"><a href="#">Blog</a></li>
+                </div>
+                <div class="learn col-2">
+                    <h6 class="mb-2">Learn</h6>
+                    <li class="mb-1"><a href="#">About us</a></li>
+                    <li class="mb-1"><a href="#">Our mission</a></li>
+                    <li class="mb-1"><a href="#">Our investments</a></li>
+                </div>
+                <div class="connect col-4">
+                    <h6 class="mb-2">Connect</h6>
+                    <div class="row">
+                        <li class="col-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="col-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="col-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="col-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="col-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="support">
-            <h6>Support</h6>
-            <ul>
-                <li>Resources</li>
-                <li>Help and support</li>
-                <li>Contact us</li>
-            </ul>
-        </div>
-        <div class="read">
-            <h6>Read</h6>
-            <ul>
-                <li>News and insights</li>
-                <li>Press</li>
-                <li>Blog</li>
-            </ul>
-        </div>
-        <div class="learn">
-            <h6>Learn</h6>
-            <ul>
-                <li>About us</li>
-                <li>Our mission</li>
-                <li>Our investment strategy</li>
-            </ul>
-        </div>
-        <div class="connect">
-            <h6>Connect</h6>
-            <ul>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-linkedin"></i></li>
-                <li><i class="fab fa-youtube"></i></li>
-            </ul>
-        </div>
-    </footer>
+    </section>
     
-
-    <!-- <div>
-        <h1>Buttons</h1>
-        <button class="btn-pri">Learn more</button>    
-        <button disabled class="btn-pri-disabled">Learn more</button>
-    </div>
-    <div style="background-color: #001B36; padding: 20px 0px;">
-        <button class="btn-sec">Learn more</button>
-        <button disabled class="btn-sec-disabled">Learn more</button>
-    </div>
-    <div>
-        <button class="btn-sec-light">Learn more</button>
-        <button disabled class="btn-sec-light-disabled">Learn more</button>
-    </div>
-    <div>
-        <button class="btn-tert">Tertiary button <i class="fas fa-long-arrow-alt-right"></i></button>
-        <button disabled class="btn-tert-disabled">Tertiary button <i class="fas fa-long-arrow-alt-right"></i></button>
-    </div>
-    <div style="background-color: #001B36; padding: 20px 0px;">
-        <button class="btn-tert-dark">Tertiary button <i class="fas fa-long-arrow-alt-right"></i></button>
-        <button disabled class="btn-tert-disabled">Tertiary button <i class="fas fa-long-arrow-alt-right"></i></button>
-    </div> -->
 </body>
 </html>
